@@ -37,10 +37,10 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| API-01 | Phase 1 | Pending |
-| API-02 | Phase 1 | Pending |
+| API-01 | Phase 2 | Verified ✓ |
+| API-02 | Phase 2 | Verified ✓ |
 | API-03 | Phase 1 | Verified ✓ |
-| API-04 | Phase 1 | Pending |
+| API-04 | Phase 2 | Pending |
 | PROC-01 | Phase 1 | Pending |
 | PROC-02 | Phase 1 | Pending |
 | PROC-03 | Phase 1 | Pending |
