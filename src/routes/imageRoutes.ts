@@ -1,14 +1,15 @@
 import { Router, Request, Response, NextFunction } from 'express';
 import { upload } from '../middlewares/upload';
+import { ImageService } from '../services/imageService';
 import { AppError } from '../middlewares/errorHandler';
 
 const router = Router();
 
 /**
  * @route POST /api/remove-bg
- * @desc Receive image and prepare for background removal
+ * @desc Receive image and remove background
  */
-router.post('/remove-bg', upload.single('image'), (req: Request, res: Response, next: NextFunction) => {
+router.post('/remove-bg', upload.single('image'), async (req: Request, res: Response, next: NextFunction) => {
   try {
     if (!req.file) {
       const error: AppError = new Error('Please upload an image file.');
@@ -16,13 +17,12 @@ router.post('/remove-bg', upload.single('image'), (req: Request, res: Response, 
       throw error;
     }
 
-    // Success response (placeholder for Phase 3)
-    res.status(200).json({
-      message: 'File received successfully',
-      filename: req.file.originalname,
-      size: req.file.size,
-      mimetype: req.file.mimetype,
-    });
+    // Process background removal
+    const processedBuffer = await ImageService.removeImageBackground(req.file.buffer);
+
+    // Return the PNG image
+    res.set('Content-Type', 'image/png');
+    res.status(200).send(processedBuffer);
   } catch (error) {
     next(error);
   }

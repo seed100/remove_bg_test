@@ -11,6 +11,6 @@ describe('API Health & Error Handling', () => {
   it('should return 404 and error "Not Found" for GET /invalid-route', async () => {
     const res = await request(app).get('/invalid-route');
     expect(res.status).toBe(404);
-    expect(res.body).toEqual({ error: 'Not Found' });
+    expect(res.body).toMatchObject({ error: 'Not Found' });
   });
 });
