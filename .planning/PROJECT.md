@@ -12,7 +12,7 @@
 
 ### Validated
 
-(None yet — ship to validate)
+- [x] 서버 내부 오류 발생 시 적절한 에러 메시지 반환 (HTTP 500) — Validated in Phase 1
 
 ### Active
 

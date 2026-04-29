@@ -39,7 +39,7 @@
 |-------------|-------|--------|
 | API-01 | Phase 1 | Pending |
 | API-02 | Phase 1 | Pending |
-| API-03 | Phase 1 | Pending |
+| API-03 | Phase 1 | Verified ✓ |
 | API-04 | Phase 1 | Pending |
 | PROC-01 | Phase 1 | Pending |
 | PROC-02 | Phase 1 | Pending |
