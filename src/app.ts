@@ -1,6 +1,7 @@
 import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import imageRoutes from './routes/imageRoutes';
 import { errorHandler, AppError } from './middlewares/errorHandler';
 
 dotenv.config();
@@ -9,6 +10,9 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+// API Routes
+app.use('/api', imageRoutes);
 
 // Health check
 app.get('/api/health', (req: Request, res: Response) => {
