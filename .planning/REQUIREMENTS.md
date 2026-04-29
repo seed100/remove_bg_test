@@ -41,10 +41,10 @@
 | API-02 | Phase 2 | Verified ✓ |
 | API-03 | Phase 1 | Verified ✓ |
 | API-04 | Phase 2 | Pending |
-| PROC-01 | Phase 1 | Pending |
-| PROC-02 | Phase 1 | Pending |
-| PROC-03 | Phase 1 | Pending |
-| LOG-01 | Phase 1 | Pending |
+| PROC-01 | Phase 3 | Verified ✓ |
+| PROC-02 | Phase 3 | Verified ✓ |
+| PROC-03 | Phase 3 | Verified ✓ |
+| LOG-01 | Phase 4 | Pending |
 | LOG-02 | Phase 1 | Pending |
 
 **Coverage:**

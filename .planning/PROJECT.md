@@ -15,11 +15,11 @@
 - [x] 서버 내부 오류 발생 시 적절한 에러 메시지 반환 (HTTP 500) — Validated in Phase 1
 - [x] 이미지 업로드 및 수신 처리 — Validated in Phase 2
 - [x] 여러 외부 사이트의 동시 요청을 처리할 수 있는 기본 비동기 서버 아키텍처 구축 — Validated in Phase 2
+- [x] `@imgly/background-removal` 모듈을 이용한 인물 추출 처리 (Node.js 환경 최적화) — Validated in Phase 3
+- [x] 처리된 이미지를 PNG 파일로 반환 — Validated in Phase 3
 
 ### Active
 
-- [ ] `@imgly/background-removal` 모듈을 이용한 인물 추출 처리 (Node.js 환경 최적화)
-- [ ] 처리된 이미지를 PNG 파일로 반환
 - [ ] 서버 사용량 및 상태 모니터링을 위한 파일 기반 로그 기록 (요청 도메인, 처리 시간 등)
 
 ### Out of Scope
