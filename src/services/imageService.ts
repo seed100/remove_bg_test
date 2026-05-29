@@ -10,7 +10,7 @@ export class ImageService {
   private static config: Config = {
     output: {
       format: 'image/png',
-      quality: 0.8,
+      quality: 1,
     },
   };
 
@@ -25,7 +25,7 @@ export class ImageService {
       // Write buffer to temp file to ensure the engine can read it from a path
       // This is a workaround for buffer/blob decoding issues in some Node environments
       fs.writeFileSync(tempFilePath, imageBuffer);
-      
+
       const fileUrl = pathToFileURL(tempFilePath).href;
       const blob = await removeBackground(fileUrl, {
         ...this.config,

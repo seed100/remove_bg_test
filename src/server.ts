@@ -1,7 +1,7 @@
 import app from './app';
 import { ImageService } from './services/imageService';
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5003;
 
 const startServer = async () => {
   // Optional: Warm up AI model
